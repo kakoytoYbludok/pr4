@@ -1,0 +1,9 @@
+FROM python:alpine
+
+LABEL version = "1.0.1"
+
+WORKDIR /calcup2/python
+
+COPY . /calcup2/python//
+
+CMD ["python", "calc.py"]

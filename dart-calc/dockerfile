@@ -1,0 +1,9 @@
+FROM google/dart
+
+LABEL version = "1.0.1"
+
+WORKDIR /calcup3/dart
+
+COPY . /calcup3/dart/
+
+CMD ["dart", "calc.dart"]

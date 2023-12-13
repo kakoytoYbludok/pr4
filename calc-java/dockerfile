@@ -1,0 +1,9 @@
+FROM adoptopenjdk/openjdk11:alpine
+
+LABEL version = "1.0.1"
+
+WORKDIR /calcup/java
+
+COPY . /calcup/java/
+
+CMD ["java", "calc.java"]

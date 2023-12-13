@@ -1,0 +1,9 @@
+FROM adoptopenjdk/openjdk11:alpine
+
+LABEL varsion = "1.0.1"
+
+WORKDIR /gameup/java
+
+COPY . /gameup/java/
+
+CMD ["java", "game.java"]
